@@ -1019,7 +1019,7 @@ function Kavo.CreateLib(kavName, themeList)
                     toggleEnabled.Size = UDim2.new(0, 21, 0, 21)
                     toggleEnabled.Image = "rbxassetid://3926309567"
                     toggleEnabled.ImageColor3 = themeList.SchemeColor
-                    toggleEnabled.ImageRectOffset = Vector2.new(200, 420)
+                    toggleEnabled.ImageRectOffset = Vector2.new(0, 0)
                     toggleEnabled.ImageRectSize = Vector2.new(48, 48)
                     toggleEnabled.ImageTransparency = 1.000
 
