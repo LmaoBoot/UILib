@@ -1020,7 +1020,7 @@ function Kavo.CreateLib(kavName, themeList)
                     toggleEnabled.Image = "rbxassetid://3926305904"
                     toggleEnabled.ImageColor3 = themeList.SchemeColor
                     toggleEnabled.ImageRectOffset = Vector2.new(0, 0)
-                    toggleEnabled.ImageRectSize = Vector2.new(48, 48)
+                    toggleEnabled.ImageRectSize = Vector2.new(36, 36)
                     toggleEnabled.ImageTransparency = 1.000
 
                     togName.Name = "togName"
@@ -1045,7 +1045,7 @@ function Kavo.CreateLib(kavName, themeList)
                     viewInfo.ZIndex = 2
                     viewInfo.Image = "rbxassetid://3926305904"
                     viewInfo.ImageColor3 = themeList.SchemeColor
-                    viewInfo.ImageRectOffset = Vector2.new(50, 764)
+                    viewInfo.ImageRectOffset = Vector2.new(764, 764)
                     viewInfo.ImageRectSize = Vector2.new(36, 36)
 
                     Sample.Name = "Sample"
