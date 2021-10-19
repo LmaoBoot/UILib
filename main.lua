@@ -1008,7 +1008,7 @@ function Kavo.CreateLib(kavName, themeList)
                     toggleDisabled.Size = UDim2.new(0, 21, 0, 21)
                     toggleDisabled.Image = "rbxassetid://3926305904"
                     toggleDisabled.ImageColor3 = themeList.SchemeColor
-                    toggleDisabled.ImageRectOffset = Vector2.new(628, 420)
+                    toggleDisabled.ImageRectOffset = Vector2.new(0, 0)
                     toggleDisabled.ImageRectSize = Vector2.new(48, 48)
 
                     toggleEnabled.Name = "toggleEnabled"
