@@ -126,7 +126,7 @@ end
   }, {
       Utilities:Create("Frame", {
           Name = "Main",
-          Size = UDim2.new(0, 600, 0, 400),
+          Size = UDim2.new(0, 300, 0, 400),
           BackgroundColor3 = Color3.fromRGB(255, 255, 255), -- Colors.Primary
           ClipsDescendants = true,
           Position = UDim2.new(0, 600, 0, 270)
