@@ -990,7 +990,7 @@ end
         Name = "TextBox",
         BackgroundTransparency = 1,
         Parent = SectionContainer,
-        Size = UDim2.new(0, 286, 0, 21)
+        Size = UDim2.new(0, 143, 0, 21)
     }, {
         Utilities:Create("Frame", {
             Name = "DropdownFrame",
@@ -1008,7 +1008,7 @@ end
                 Size = UDim2.new(1, 0, 0, 14),
                 TextXAlignment = Enum.TextXAlignment.Left,
                 RichText = true,
-                Position = UDim2.new(0, 4, 0, 0),
+                Position = UDim2.new(1, 4, 0, 0),
                 TextSize = 13,
                 TextColor3 = Colors.TertiaryText,
                 Font = Enum.Font.SourceSansBold,
@@ -1026,9 +1026,8 @@ end
                 TextColor3 = Colors.TertiaryText,
                 Font = Enum.Font.SourceSansBold,
 
-            }),
-        }
-    )
+            })}
+        )
     }
     )
 end
