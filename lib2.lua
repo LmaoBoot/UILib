@@ -981,6 +981,44 @@ end
     return LabelTable
   end
 
+  function SectionTable:TextBox(Info)
+    Info.Text = Info.Text or "Dropdown"
+    Info.Flag = Info.Flag or nil
+    Info.Default = Info.Default or nil
+
+    local TextBox = Utilities:Create("Frame", {
+        Name = "TextBox",
+        BackgroundTransparency = 1,
+        Parent = SectionContainer,
+        Size = UDim2.new(0, 286, 0, 21)
+    }, {
+        Utilities:Create("Frame", {
+            Name = "DropdownFrame",
+            Size = UDim2.new(.6, 3, 0, 14),
+            BackgroundColor3 = Colors.Secondary,
+            ClipsDescendants = true,
+            ZIndex = DropdownTable.Index
+        }, {
+            Utilities:Create("UIStroke", {
+                Color = Colors.AccentDivider
+            }),
+            Utilities:Create("TextLabel", {
+                Name = "DropdownText",
+                BackgroundTransparency = 1,
+                Text = Info.Text,
+                Size = UDim2.new(1, 0, 0, 14),
+                TextXAlignment = Enum.TextXAlignment.Left,
+                RichText = true,
+                Position = UDim2.new(0, 4, 0, 0),
+                TextSize = 13,
+                TextColor3 = Colors.TertiaryText,
+                Font = Enum.Font.SourceSansBold,
+                ZIndex = DropdownTable.Index
+            }),
+        }
+    )
+    }
+    )
   function SectionTable:Dropdown(Info)
     Info.Text = Info.Text or "Dropdown"
     Info.Flag = Info.Flag or nil
