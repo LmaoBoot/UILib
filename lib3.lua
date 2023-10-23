@@ -996,8 +996,7 @@ end
             Name = "DropdownFrame",
             Size = UDim2.new(.6, 3, 0, 14),
             BackgroundColor3 = Colors.Secondary,
-            ClipsDescendants = true,
-            ZIndex = DropdownTable.Index
+
         }, {
             Utilities:Create("UIStroke", {
                 Color = Colors.AccentDivider
@@ -1013,7 +1012,7 @@ end
                 TextSize = 13,
                 TextColor3 = Colors.TertiaryText,
                 Font = Enum.Font.SourceSansBold,
-                ZIndex = DropdownTable.Index
+                
             }),
             Utilities:Create("TextBox", {
                 Name = "TextBoxText",
@@ -1026,12 +1025,13 @@ end
                 TextSize = 13,
                 TextColor3 = Colors.TertiaryText,
                 Font = Enum.Font.SourceSansBold,
-                ZIndex = DropdownTable.Index
+
             }),
         }
     )
     }
     )
+end
   function SectionTable:Dropdown(Info)
     Info.Text = Info.Text or "Dropdown"
     Info.Flag = Info.Flag or nil
