@@ -982,7 +982,7 @@ end
   end
 
   function SectionTable:TextBox(Info)
-    Info.Text = Info.Text or "Dropdown"
+    Info.Text = Info.Text or "TextBox"
     Info.Flag = Info.Flag or nil
     Info.Default = Info.Default or nil
 
@@ -1003,9 +1003,22 @@ end
                 Color = Colors.AccentDivider
             }),
             Utilities:Create("TextLabel", {
-                Name = "DropdownText",
+                Name = "TextBoxText",
                 BackgroundTransparency = 1,
                 Text = Info.Text,
+                Size = UDim2.new(1, 0, 0, 14),
+                TextXAlignment = Enum.TextXAlignment.Left,
+                RichText = true,
+                Position = UDim2.new(0, 4, 0, 0),
+                TextSize = 13,
+                TextColor3 = Colors.TertiaryText,
+                Font = Enum.Font.SourceSansBold,
+                ZIndex = DropdownTable.Index
+            }),
+            Utilities:Create("TextBox", {
+                Name = "TextBoxText",
+                BackgroundTransparency = 1,
+                Text = "",
                 Size = UDim2.new(1, 0, 0, 14),
                 TextXAlignment = Enum.TextXAlignment.Left,
                 RichText = true,
